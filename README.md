@@ -75,6 +75,10 @@ Remove all handlers for all events
 
 Emit `even` with its arguments
 
+## Acknowledgements
+
+[ee-ts](https://github.com/aleclarson/ee-ts) - Type-safe, isomorphic event emitters
+
 ## License
 
 Pietile EventEmitter is MIT License.
