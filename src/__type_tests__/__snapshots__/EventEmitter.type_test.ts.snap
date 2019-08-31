@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`wrong emit argument (type) should match snapshot 1`] = `"Expected 1 arguments, but got 2."`;
+
+exports[`wrong emit argument type (type) should match snapshot 1`] = `"Argument of type '\\"1\\"' is not assignable to parameter of type 'number'."`;
+
+exports[`wrong emit arguments count (type) should match snapshot 1`] = `"Expected 2 arguments, but got 3."`;
+
+exports[`wrong handler argument (type) should match snapshot 1`] = `"Argument of type '(a: number) => void' is not assignable to parameter of type '() => void'."`;
+
+exports[`wrong handler argument type (type) should match snapshot 1`] = `
+"Argument of type '(a: string) => void' is not assignable to parameter of type '(a: number) => void'.
+  Types of parameters 'a' and 'a' are incompatible.
+    Type 'number' is not assignable to type 'string'."
+`;
+
+exports[`wrong handler arguments count (type) should match snapshot 1`] = `"Argument of type '(a: number, b: string) => void' is not assignable to parameter of type '(a: number) => void'."`;
+
+exports[`wrong listener argument (type) should match snapshot 1`] = `"Argument of type '(a: number) => void' is not assignable to parameter of type '() => void'."`;
+
+exports[`wrong listener argument type (type) should match snapshot 1`] = `
+"Argument of type '(a: string) => void' is not assignable to parameter of type '(a: number) => void'.
+  Types of parameters 'a' and 'a' are incompatible.
+    Type 'number' is not assignable to type 'string'."
+`;
+
+exports[`wrong listener arguments count (type) should match snapshot 1`] = `"Argument of type '(a: number, b: string) => void' is not assignable to parameter of type '(a: number) => void'."`;

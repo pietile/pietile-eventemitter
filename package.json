@@ -1,0 +1,62 @@
+{
+  "name": "pietile-eventemitter",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "EventEmitter",
+    "typed",
+    "TypeScript"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc --build tsconfig.build.json",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prettify": "import-sort --write 'src/**/*.{ts,tsx}' && prettier --write 'src/**/*.{ts,tsx}'"
+  },
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/jest": "~24.0.0",
+    "@typescript-eslint/eslint-plugin": "~2.0.0",
+    "@typescript-eslint/parser": "~2.0.0",
+    "dts-jest": "~23.0.0",
+    "eslint": "~6.2.0",
+    "eslint-config-airbnb-base": "~14.0.0",
+    "eslint-config-prettier": "~6.1.0",
+    "eslint-plugin-import": "^2.18.0",
+    "husky": "~3.0.0",
+    "import-sort": "~6.0.0",
+    "import-sort-cli": "~6.0.0",
+    "import-sort-parser-typescript": "~6.0.0",
+    "import-sort-style-pietile": "~1.1.0",
+    "jest": "~24.9.0",
+    "lint-staged": "~9.2.0",
+    "prettier": "~1.18.0",
+    "rimraf": "~3.0.0",
+    "ts-jest": "~24.0.0",
+    "typescript": "~3.6.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "import-sort --write",
+      "prettier --write",
+      "git add",
+      "jest --bail --findRelatedTests"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/pietile/pietile-eventemitter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pietile/pietile-eventemitter.git"
+  }
+}
