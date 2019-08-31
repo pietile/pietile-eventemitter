@@ -1,6 +1,7 @@
 # Pietile EventEmitter
 
 [![npm version](https://badgen.net/npm/v/pietile-eventemitter?color=56C838)](https://www.npmjs.com/package/pietile-eventemitter)
+[![install size](https://badgen.net/packagephobia/install/pietile-eventemitter)](https://packagephobia.now.sh/result?p=pietile-eventemitter)
 
 Tiny typed EventEmitter for TypeScript.
 
