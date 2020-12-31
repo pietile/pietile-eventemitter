@@ -43,6 +43,8 @@ export class EventEmitter<T extends { [K in keyof T]: (...args: any) => any }> {
       return;
     }
 
-    eventHandlers.forEach((handler: T[K]): void => handler(...args));
+    eventHandlers.forEach((handler: T[K]): void => {
+      handler(...args);
+    });
   }
 }
