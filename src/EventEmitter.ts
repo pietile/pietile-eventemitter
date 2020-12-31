@@ -1,7 +1,11 @@
+type Handlers<T> = {
+  [K in keyof T]: Array<T[K]>;
+};
+
 export class EventEmitter<T extends { [K in keyof T]: (...args: any) => any }> {
   private handlers: {
     [K in keyof T]: Array<T[K]>;
-  } = {} as any;
+  } = {} as Handlers<T>;
 
   on<K extends keyof T>(event: K, handler: T[K]): T[K] {
     let eventHandlers = this.handlers[event];
@@ -30,7 +34,7 @@ export class EventEmitter<T extends { [K in keyof T]: (...args: any) => any }> {
   }
 
   offAll(): void {
-    this.handlers = {} as any;
+    this.handlers = {} as Handlers<T>;
   }
 
   emit<K extends keyof T>(event: K, ...args: Parameters<T[K]>): void {
