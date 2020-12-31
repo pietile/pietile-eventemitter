@@ -2,7 +2,7 @@
 
 exports[`wrong emit argument (type) should match snapshot 1`] = `"Expected 1 arguments, but got 2."`;
 
-exports[`wrong emit argument type (type) should match snapshot 1`] = `"Argument of type '\\"1\\"' is not assignable to parameter of type 'number'."`;
+exports[`wrong emit argument type (type) should match snapshot 1`] = `"Argument of type 'string' is not assignable to parameter of type 'number'."`;
 
 exports[`wrong emit arguments count (type) should match snapshot 1`] = `"Expected 2 arguments, but got 3."`;
 

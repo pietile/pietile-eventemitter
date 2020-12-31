@@ -20,6 +20,7 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/no-explicit-any': 'off',
+    'import/extensions': 'off',
     'import/prefer-default-export': 'off',
   },
   overrides: [
